@@ -1,0 +1,32 @@
+{
+    "name": "sleptor/omnipay-epayments",
+    "type": "library",
+    "description": "ePayments driver for the Omnipay payment processing library",
+    "keywords": [
+        "ePayments",
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment"
+    ],
+    "homepage": "https://github.com/sleptor/omnipay-epayments",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sleptor"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "sleptor\\epayments\\" : "src/" }
+    },
+    "require": {
+        "php": "^5.6|^7",
+        "omnipay/common": "~2.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "~2.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
