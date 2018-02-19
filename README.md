@@ -3,7 +3,7 @@
 **Yet another ePayments driver for Omnipay payment processing library**
 
 [Omnipay](https://github.com/omnipay/omnipay) is a framework agnostic, multi-gateway payment
-processing library for PHP 5.3+.
+processing library for PHP 5.6+.
 
 This package implements [ePayments](https://epayments.com/) support for Omnipay.
 

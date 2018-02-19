@@ -10,14 +10,14 @@ use Omnipay\Common\Message\RedirectResponseInterface;
  */
 class PurchaseResponse extends AbstractResponse implements RedirectResponseInterface
 {
-	public function getEndpoint()
-	{
-		if ($this->getRequest()->getTestMode()){
+    public function getEndpoint()
+    {
+        if ($this->getRequest()->getTestMode()) {
             return 'https://api.sandbox.epayments.com/merchant/prepare';
         } else {
             return 'https://api.epayments.com/merchant/prepare';
         }
-	}
+    }
 
     public function isSuccessful()
     {

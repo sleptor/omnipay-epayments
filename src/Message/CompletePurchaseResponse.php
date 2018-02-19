@@ -5,8 +5,6 @@ namespace sleptor\epayments\Message;
 use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RequestInterface;
 
-/**
- */
 class CompletePurchaseResponse extends AbstractResponse
 {
     /**
@@ -35,7 +33,7 @@ class CompletePurchaseResponse extends AbstractResponse
 
         $sign = md5(implode(';', $parts));
 
-        if(!isset($this->data['sign']) || $this->data['sign'] !== strtoupper($sign)) {
+        if (!isset($this->data['sign']) || $this->data['sign'] !== strtoupper($sign)) {
             throw new \Exception('bad signature');
         }
     }

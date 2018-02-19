@@ -66,6 +66,7 @@ class PurchaseRequest extends \Omnipay\Common\Message\AbstractRequest
             $this->getAmount(),
             $this->getCurrency(),
         ];
+
         return md5(implode(';', $parts));
     }
 
