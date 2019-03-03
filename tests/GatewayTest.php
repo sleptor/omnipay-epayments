@@ -3,7 +3,6 @@
 namespace sleptor\epayments;
 
 use Omnipay\Tests\GatewayTestCase;
-use sleptor\epayments\Message as Message;
 
 class GatewayTest extends GatewayTestCase
 {
@@ -25,13 +24,5 @@ class GatewayTest extends GatewayTestCase
         $request = $this->gateway->completePurchase(['amount' => '10.00']);
         $this->assertInstanceOf(Message\CompletePurchaseRequest::class, $request);
         $this->assertSame('10.00', $request->getAmount());
-    }
-
-    public function testFetchTransaction()
-    {
-        //TODO
-        //$request = $this->gateway->fetchTransaction(array('transactionReference' => 'abc123'));
-        //$this->assertInstanceOf('sleptor\epayments\Message\FetchTransactionRequest', $request);
-        //$this->assertSame('abc123', $request->getTransactionReference());
     }
 }
